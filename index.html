@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>引き継ぎ初日 | 月末集計の練習室</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f1e9;color:#193d36;font:16px/1.7 "Yu Gothic",sans-serif}main{max-width:840px;margin:auto;padding:40px 20px}header{border-bottom:4px solid #1b5948;padding-bottom:18px}h1{font-family:serif;font-size:clamp(2.5rem,7vw,4rem);line-height:1.15;margin:6px 0}h2{font-size:1.25rem;margin:0 0 10px}section{background:#fffdf7;border:1px solid #d4d6c9;border-radius:12px;padding:22px;margin:18px 0}table{width:100%;border-collapse:collapse}th,td{text-align:left;border-bottom:1px solid #ddd;padding:6px}input,button{font:inherit;border-radius:6px;padding:8px 12px}input{width:100%;border:1px solid #718980}button{background:#195744;color:white;border:0;cursor:pointer;margin:10px 8px 0 0}label{display:inline-block;width:min(100%,230px);margin-right:12px}#feedback{font-weight:bold}small{color:#47675d}
+</style>
+<main><header><small>業務リハーサル ／ 経理</small><h1>引き継ぎ初日</h1>月末集計を、一人で練習できる場所。</header>
+<section><h2>担当者からの引き継ぎ</h2>あなたは今月の集計担当です。下の明細から、3月と4月の売上をまとめてください。返品は<strong>返品を受けた月</strong>の売上から引きます。注文番号が同じ行は、同じ注文の記録です。</section>
+<section><h2>練習用の取引明細</h2><table><thead><tr><th>記録日</th><th>注文</th><th>区分</th><th>金額</th></tr></thead><tbody id="rows"></tbody></table><button id="download">明細をCSVで保存</button></section>
+<section><h2>月別の売上を提出</h2><form id="answer"><label>3月の売上（円）<input id="march" type="number" step="1" required></label><label>4月の売上（円）<input id="april" type="number" step="1" required></label><br><button>採点する</button><button type="button" id="next">別の金額で練習</button></form><p id="feedback" role="status"></p></section></main>
+<script src="grader.js"></script><script src="ui.js"></script></html>
